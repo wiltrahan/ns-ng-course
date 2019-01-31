@@ -1,4 +1,4 @@
-import { Component, Input } from "@angular/core";
+import { Component } from "@angular/core";
 
 @Component({
   selector: 'ns-current-challenge',
@@ -6,6 +6,7 @@ import { Component, Input } from "@angular/core";
   styleUrls: ['./current-challenge.component.css'],
   moduleId: module.id
 })
+
 export class CurrentChallengeComponent {
-  @Input() challenges: string[] = [];
+  
 }

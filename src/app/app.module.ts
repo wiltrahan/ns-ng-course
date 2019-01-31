@@ -7,6 +7,9 @@ import { CurrentChallengeComponent } from "~/app/challenges/current-challenge/cu
 // Uncomment and add to NgModule imports if you need to use two-way binding
 import { NativeScriptFormsModule } from "nativescript-angular/forms";
 import { ChallengeEditComponent } from './challenges/challenge-edit/challenge-edit.component';
+import { AuthComponent } from './auth/auth.component';
+import { TodayComponent } from './challenges/today/today.component';
+import { AppRoutingModule } from "~/app/app-routing.module";
 
 // Uncomment and add to NgModule imports if you need to use the HttpClient wrapper
 // import { NativeScriptHttpClientModule } from "nativescript-angular/http-client";
@@ -17,12 +20,15 @@ import { ChallengeEditComponent } from './challenges/challenge-edit/challenge-ed
     ],
     imports: [
         NativeScriptModule,
-        NativeScriptFormsModule
+        NativeScriptFormsModule,
+        AppRoutingModule
     ],
     declarations: [
         AppComponent,
         CurrentChallengeComponent,
-        ChallengeEditComponent
+        ChallengeEditComponent,
+        AuthComponent,
+        TodayComponent
     ],
     providers: [],
     schemas: [
