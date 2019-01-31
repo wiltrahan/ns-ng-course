@@ -1,0 +1,8 @@
+<FlexboxLayout justifyContent="space-between">
+  <TextField
+    class="form-control" 
+    hint="Challenge Title" 
+    [(ngModel)]="challengeDescription"
+  ></TextField>
+  <button class="btn" (tap)="onSetChallenge()" text="Set Challenge"></button>
+</FlexboxLayout>
