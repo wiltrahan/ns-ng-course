@@ -5,4 +5,11 @@
     *ngIf="canGoBack"
     (tap)="onGoBack()"
   ></NavigationButton>
+  <ActionItem 
+    *ngIf="!android" 
+    ios.position="left"
+    (tap)="onToggleMenu()"
+    >
+    <Label text="MENU"></Label>
+  </ActionItem>
 </ActionBar>
