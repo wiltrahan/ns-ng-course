@@ -6,7 +6,7 @@
     (tap)="onGoBack()"
   ></NavigationButton>
   <ActionItem 
-    *ngIf="!android" 
+    *ngIf="!android && hasMenu" 
     ios.position="left"
     (tap)="onToggleMenu()"
     >
