@@ -3,16 +3,15 @@
     text="Back"
     android.systemIcon="ic_menu_back"
     *ngIf="canGoBack"
-    (tap)="onGoBack()"
-  ></NavigationButton>
+    (tap)="onGoBack()">
+  </NavigationButton>
   <ActionItem 
     *ngIf="!android && hasMenu" 
     ios.position="left"
-    (tap)="onToggleMenu()"
-    >
+    (tap)="onToggleMenu()">
     <Label text="MENU"></Label>
   </ActionItem>
   <ng-content>
-    
+
   </ng-content>
 </ActionBar>

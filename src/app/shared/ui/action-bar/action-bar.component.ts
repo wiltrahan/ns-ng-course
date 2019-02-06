@@ -3,8 +3,8 @@ import { Page } from 'tns-core-modules/ui/page';
 import { isAndroid } from 'platform';
 import { RouterExtensions } from 'nativescript-angular/router';
 import { UIService } from '~/app/shared/ui.service';
-declare var android: any;
 
+declare var android: any;
 
 @Component({
   selector: 'ns-action-bar',
