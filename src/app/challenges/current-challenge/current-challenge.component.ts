@@ -19,7 +19,10 @@ export class CurrentChallengeComponent {
   onChangeStatus() {
     this.modalDialog.showModal(DayModalComponent, {
       fullscreen: true,
-      viewContainerRef: this.uiService.getRootVcRef() ? this.uiService.getRootVcRef() : this.vcRef
+      viewContainerRef: this.uiService.getRootVcRef() ? this.uiService.getRootVcRef() : this.vcRef,
+      context: { date: new Date() }
+    }).then((action: string) => {
+      console.log(action);
     });
   }
 }
