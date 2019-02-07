@@ -4,7 +4,6 @@ import { Routes } from "@angular/router";
 import { ChallengeTabsComponent } from "~/app/challenges/challenge-tabs/challenge-tabs.component";
 import { TodayComponent } from "~/app/challenges/today/today.component";
 import { CurrentChallengeComponent } from "~/app/challenges/current-challenge/current-challenge.component";
-import { ChallengeEditComponent } from "~/app/challenges/challenge-edit/challenge-edit.component";
 
 const routes: Routes = [
   { 
@@ -15,7 +14,7 @@ const routes: Routes = [
       { path: 'current-challenge', component: CurrentChallengeComponent, outlet: 'currentChallenge'}
     ]
   },
-  { path: ':mode', component: ChallengeEditComponent },
+  { path: ':mode', loadChildren: '~/app/challenges/challenge-edit/challenge-edit.module#ChallengeEditModule' },
   { path: '', redirectTo: '/challenges/tabs', pathMatch: 'full'}
 ];
 
